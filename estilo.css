@@ -1,0 +1,311 @@
+/* html */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.barraSup{
+    background-color:black;
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    /*background-color: rgb(214, 184, 241);*/
+    padding: 0 1em 0 1em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: 'Kalam', cursive;
+}
+
+body{
+   /* background-color: rgb(194, 184, 191);*/
+    background-image: url(fondo.jpg);
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+}
+
+#logo-container {
+    text-align: left; /* Centra el logo horizontalmente */
+    padding-top: 10px; /* Ajusta el espacio superior según tus necesidades */
+    padding-left: 150px;
+}
+
+/* Estilos para el logo */
+#logo {
+    width: 100px; /* Ajusta el tamaño según tus necesidades */
+    height: auto; /* Mantiene la proporción de aspecto */
+}
+
+.menu{
+    display: flex;
+    /*flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: right;*/
+    font-family: 'Righteous', cursive;
+}
+
+#desplegar{
+    margin: auto;
+    position: relative;
+    top: -0.5em;
+    /*display: none;*/
+}
+
+#contraer{
+    margin: auto;
+    position: relative;
+    top: -1.5em;
+}
+
+.opcionMenu:hover{
+    -webkit-box-shadow:0px 0px 20px 7px rgba(255, 255, 255, 0.85);
+    -moz-box-shadow: 0px 0px 20px 7px rgba(255, 255, 255, 0.85);
+    box-shadow: 0px 0px 20px 7px rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    background-color: #e6e1e17c;
+    transition: .2s;
+}
+.opcionMenu{
+    color:#e39403;
+    padding-top: 1px;
+    padding: .25em;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.Opciones:hover{
+    -webkit-box-shadow:0px 0px 10px 7px rgba(255,178,46,0.85);
+    -moz-box-shadow: 0px 0px 10px 7px rgba(255,178,46,0.85);
+    box-shadow: 0px 0px 10px 7px rgba(255,178,46,0.85);
+    color: rgb(255, 196, 0);
+    background-color: #e6e1e17c;
+    padding: .2em;
+    border-radius: 15px;
+    transition: .2s;
+}
+
+#desplegable{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    top: -5em;
+    opacity: 0;
+    transition: all .5s;
+}
+
+#nombre{
+    color:#e39403;
+    font-family: 'Righteous', cursive;
+    width: 18em;
+    font-weight: 300;
+    font-size: 2.5em;
+}
+
+.enlace:link, enlace:visited, enlace:active{
+    color:black;
+    text-decoration: none;
+} 
+
+.cuerpoPrincipal{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.inicio{
+    color:#dbdbdb;
+    margin: 2em;
+    text-align: center;
+    font-size: 22px;
+}
+
+.inicio a{
+    padding: 1em 1em 1em 5em; /*arriba abajo izq der CREO*/
+    margin: 1em;
+    text-align: center;
+}
+
+/* Tienda */
+
+#volver{
+    color:#e39403;
+    padding-top: 1px;
+    padding: .2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+.grupoTarjetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tarjeta{
+    width: 15em;
+    height: 25em;
+    padding: 1em 1em 1em 0;
+    margin: 1em;
+    background-color: rgb(255, 255, 255) ;
+    box-shadow: 2px 2px 2px 2px rgb(255, 94, 0);
+    border-radius: 4px;
+}
+
+.tarjeta:hover{
+    box-shadow: 6px 6px 10px rgb(134, 134, 134);
+}
+
+.foto{
+    max-width: 100%; /* Establece el ancho máximo del contenedor de la imagen */
+    height: 70%; /* Mantiene la proporción de aspecto de la imagen */
+  /*  width: 100%;*/
+    margin: auto;
+    padding-left: 9px; /* Ajusta el espacio superior según tus necesidades */
+}
+
+.articulo{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.adicional{
+    width: 100%;
+    text-align: center;
+    margin: .5em;
+    font-size: 1em;
+}
+
+.precio{
+    width: 100%;
+    text-align: right;
+    margin: 0 0 0 0;
+    font-size: 2em;
+}
+
+/* Contacto */
+.container-form{
+    color:#130909;
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+.container-form h2{
+    color:#030303;
+    margin-bottom: 15px;
+    font-size: 35px
+}
+.container-form p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.container-form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+.container-form a i{
+    color: rgb(255, 94, 0);
+    margin-right: 10px;
+    border-radius: 4px;
+}
+.container-form form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+.container-form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+.container-form .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: rgb(255, 94, 0);
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.container-form .btn-enviar:hover{
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+    background-color: rgb(255, 251, 251);
+}
+
+/* *********** SLIDER ******** */
+.container-slider{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 13px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 7px 10px #000000;
+}
+
+.slider{
+    display: flex;
+    width: 600%;
+    height: 350px;
+    margin-left: -100%;
+}
+
+.slider__section{
+    width: 100%;
+}
+
+.slider__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider__btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255,178,46,0.85);
+    top: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider__btn:hover{
+    background: #dbdbdb;
+}
+
+.slider__btn-left{
+    left: 10px;
+}
+
+.slider__btn-right{
+    right: 10px;
+}
